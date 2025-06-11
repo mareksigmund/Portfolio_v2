@@ -5,15 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Marek – Web Developer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="assets/css/styles.css"/>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-  <!-- Intro -->
+  <!-- Hero -->
   <section class="hero">
     <div class="container">
       <h1>Cześć, jestem Marek</h1>
-      <p class="subtitle">Tworzę nowoczesne aplikacje webowe jako Junior Web Developer</p>
+      <p>Tworzę nowoczesne aplikacje webowe jako Junior Web Developer</p>
       <div class="cta">
         <a href="#projects" class="btn">Zobacz projekty</a>
         <a href="assets/cv/CV_Marek.pdf" class="btn outline" target="_blank">Pobierz CV</a>
@@ -25,48 +25,52 @@
   <section class="about">
     <div class="container">
       <h2>O mnie</h2>
-      <p> Jestem studentem z branży IT i AI chcę rozwijać się w różnych
-              obszarach technologii. Specjalizuję się w tworzeniu aplikacji
-              internetowych, ale interesuję się także sztuczną inteligencją,
-              uczeniem maszynowym i pracą z danymi.</p>
+      <p>
+        Jestem programistą aplikacji internetowych oraz studentem kierunku „Sztuczna inteligencja i analiza danych”.
+        Specjalizuję się w Angularze i .NET, ale interesuję się też AI, w szczególności wykorzystaniem sieci neuronowych w aplikacjach oraz systemami wbudowanymi.
+      </p>
     </div>
   </section>
 
   <!-- Projekty -->
   <section class="projects" id="projects">
     <div class="container">
-      <h2>Wybrane projekty</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Aplikacja ToDo</h3>
-          <p>Zarządzanie zadaniami z localStorage i edycją.</p>
-          <a href="projects/projekt1.html">Zobacz więcej →</a>
+      <h2>Projekty</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>EventManager</h3>
+          <p>Aplikacja do zarządzania wydarzeniami i użytkownikami.</p>
+          <span class="tags">Angular • .NET • MongoDB</span>
+          <a href="projects/eventmanager.html">Zobacz więcej →</a>
         </div>
-        <div class="project-card">
-          <h3>System logowania</h3>
-          <p>Rejestracja i logowanie z walidacją w Angularze.</p>
-          <a href="projects/projekt2.html">Zobacz więcej →</a>
+        <div class="card">
+          <h3>LibraryApp</h3>
+          <p>System rezerwacji i wypożyczeń książek online.</p>
+          <span class="tags">Angular • Express • Node.js</span>
+          <a href="projects/library.html">Zobacz więcej →</a>
         </div>
-        <div class="project-card">
-          <h3>Portfolio Developer</h3>
-          <p>Strona z projektami i CV – ta, którą właśnie oglądasz.</p>
-          <a href="projects/projekt3.html">Zobacz więcej →</a>
+        <div class="card">
+          <h3>Restauracje</h3>
+          <p>Platforma do rezerwacji stolików i przeglądania menu.</p>
+          <span class="tags">JavaScript • Firebase</span>
+          <a href="projects/restaurant.html">Zobacz więcej →</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>© 2025 Marek</p>
-      <div class="links">
-        <a href="https://github.com/mareksigmund/Projekty" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/marek-sigmund-235164357" target="_blank">LinkedIn</a>
-        <a href="mailto:marek@email.com">E-mail</a>
-      </div>
+  <!-- Stopka -->
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="assets/cv/CV_Marek.pdf" target="_blank">CV</a>
+      <a href="https://github.com/mareksigmund/Projekty" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/marek-sigmund-235164357" target="_blank">LinkedIn</a>
+      <a href="mailto:marek@email.com">E-mail</a>
     </div>
-  </footer>
+  </div>
+</footer>
+
 
 </body>
 </html>
