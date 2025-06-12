@@ -122,6 +122,31 @@ body {
   color: #007bff;
   text-decoration: none;
 }
+/* Technologie */
+.tech-stack {
+  padding: 4rem 2rem;
+  background: #fff;
+  text-align: center;
+}
+
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 1.5rem;
+}
+
+.tech-grid span {
+  background: #f0f0f0;
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
 
 /* Footer */
 footer {
@@ -148,3 +173,4 @@ footer {
 .footer-links a:hover {
   color: #aaa;
 }
+

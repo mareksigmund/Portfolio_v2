@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restauracje – Projekt</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <section class="project-page">
+    <div class="container">
+      <a href="../index.html" class="back">← Powrót do strony głównej</a>
+
+      <h1>Restauracje</h1>
+      <p class="intro">
+        Platforma umożliwiająca przeglądanie restauracji, przeglądanie menu, dokonywanie rezerwacji stolików i rekomendacje na podstawie lokalizacji.
+      </p>
+
+      <h2>Technologie</h2>
+      <ul class="tech-list">
+        <li>JavaScript</li>
+        <li>Firebase</li>
+        <li>HTML/CSS</li>
+      </ul>
+
+      <h2>O projekcie</h2>
+      <p>
+        Aplikacja działa w pełni w przeglądarce. Pozwala użytkownikowi założyć konto, przeglądać restauracje i menu, dokonywać rezerwacji oraz otrzymywać rekomendacje.
+        Dane są przechowywane w czasie rzeczywistym w Firebase Realtime Database. Użyto mapowania dynamicznego widoków i prostych algorytmów rekomendacji.
+      </p>
+
+      <h2>Screeny aplikacji</h2>
+      <div class="gallery-wrapper">
+        <div class="gallery-main">
+          <img id="main-image" src="../assets/img/restapp/main_page.png" alt="Strona główna" />
+        </div>
+        <div class="gallery-thumbnails">
+          <img src="../assets/img/restapp/main_page.png" onclick="setMainImage(this)" />
+          <img src="../assets/img/restapp/lista_restauracji.png" onclick="setMainImage(this)" />
+          <img src="../assets/img/restapp/rezerwacja.png" onclick="setMainImage(this)" />
+          <img src="../assets/img/restapp/rekomendacja.png" onclick="setMainImage(this)" />
+        </div>
+      </div>
+
+      <h2>Plany rozwoju</h2>
+      <ul class="feature-list">
+        <li>Logowanie przez Google i Facebook</li>
+        <li>System oceny restauracji przez użytkowników</li>
+        <li>Integracja z mapami Google</li>
+        <li>Filtrowanie po lokalizacji i typie kuchni</li>
+      </ul>
+
+      <div class="buttons">
+        <a href="https://github.com/mareksigmund/Projekty" target="_blank" class="btn">Zobacz kod na GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function setMainImage(img) {
+      const main = document.getElementById('main-image');
+      main.src = img.src;
+      main.alt = img.alt;
+    }
+  </script>
+</body>
+</html>
