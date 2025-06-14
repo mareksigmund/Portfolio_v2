@@ -1,69 +1,132 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Restauracje – Projekt</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restauracje – Projekt</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style_app.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="project-page">
+      <div class="container">
+        <a href="../index.html" class="back">← Powrót do strony głównej</a>
 
-  <section class="project-page">
-    <div class="container">
-      <a href="../index.html" class="back">← Powrót do strony głównej</a>
+        <h1>Restauracje</h1>
+        <p class="intro">
+          Platforma umożliwiająca przeglądanie restauracji, menu, rezerwację
+          stolików oraz rekomendacje na podstawie lokalizacji i preferencji.
+        </p>
 
-      <h1>Restauracje</h1>
-      <p class="intro">
-        Platforma umożliwiająca przeglądanie restauracji, przeglądanie menu, dokonywanie rezerwacji stolików i rekomendacje na podstawie lokalizacji.
-      </p>
+        <ul class="tech-list">
+          <li>JavaScript</li>
+          <li>Firebase</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
 
-      <h2>Technologie</h2>
-      <ul class="tech-list">
-        <li>JavaScript</li>
-        <li>Firebase</li>
-        <li>HTML/CSS</li>
-      </ul>
-
-      <h2>O projekcie</h2>
-      <p>
-        Aplikacja działa w pełni w przeglądarce. Pozwala użytkownikowi założyć konto, przeglądać restauracje i menu, dokonywać rezerwacji oraz otrzymywać rekomendacje.
-        Dane są przechowywane w czasie rzeczywistym w Firebase Realtime Database. Użyto mapowania dynamicznego widoków i prostych algorytmów rekomendacji.
-      </p>
-
-      <h2>Screeny aplikacji</h2>
-      <div class="gallery-wrapper">
-        <div class="gallery-main">
-          <img id="main-image" src="../assets/img/restapp/main_page.png" alt="Strona główna" />
+        <div class="o-projekcie">
+          <p>
+            Projekt „Restauracje” to webowa platforma umożliwiająca użytkownikom
+            odkrywanie restauracji w swojej okolicy, dokonywanie rezerwacji oraz
+            ocenianie lokali. Dzięki integracji z Firebase dane są zapisywane w
+            czasie rzeczywistym, co pozwala na natychmiastowe aktualizacje
+            informacji.
+          </p>
+          <p>
+            Użytkownik ma możliwość przeglądania dostępnych lokali, wglądu w
+            szczegóły menu, składania rezerwacji oraz otrzymywania rekomendacji
+            dopasowanych do jego lokalizacji i historii aktywności.
+          </p>
+          <p>
+            Aplikacja została zbudowana w czystym JavaScript, bez frameworków
+            frontendowych, co pozwoliło skupić się na optymalizacji,
+            przejrzystości kodu oraz lekkim i responsywnym interfejsie.
+          </p>
         </div>
-        <div class="gallery-thumbnails">
-          <img src="../assets/img/restapp/main_page.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/restapp/lista_restauracji.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/restapp/rezerwacja.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/restapp/rekomendacja.png" onclick="setMainImage(this)" />
+
+        <h2>Galeria widoków</h2>
+        <div class="gallery-wrapper">
+          <div class="gallery-main">
+            <p id="image-caption" class="image-caption">Strona główna</p>
+            <img
+              id="main-image"
+              src="../assets/img/restapp/main_page.png"
+              alt="Strona główna"
+            />
+          </div>
+          <div class="gallery-thumbnails">
+            <img
+              src="../assets/img/restapp/main_page.png"
+              alt="Strona główna"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/restapp/lista_restauracji.png"
+              alt="Lista restauracji"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/restapp/rezerwacja.png"
+              alt="Rezerwacja stolika"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/restapp/rekomendacja.png"
+              alt="System rekomendacji"
+              onclick="setMainImage(this)"
+            />
+          </div>
+        </div>
+
+        <h2>Planowane rozszerzenia</h2>
+        <ul class="feature-list">
+          <li>Logowanie przez Google i Facebook</li>
+          <li>System ocen i recenzji restauracji</li>
+          <li>Integracja z mapami Google</li>
+          <li>Filtrowanie po lokalizacji i typie kuchni</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/mareksigmund/Projekty/tree/main/RestaurantAPP"
+            target="_blank"
+            class="btn"
+            >Zobacz kod na GitHub</a
+          >
         </div>
       </div>
+    </section>
 
-      <h2>Plany rozwoju</h2>
-      <ul class="feature-list">
-        <li>Logowanie przez Google i Facebook</li>
-        <li>System oceny restauracji przez użytkowników</li>
-        <li>Integracja z mapami Google</li>
-        <li>Filtrowanie po lokalizacji i typie kuchni</li>
-      </ul>
-
-      <div class="buttons">
-        <a href="https://github.com/mareksigmund/Projekty" target="_blank" class="btn">Zobacz kod na GitHub</a>
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="../assets/cv/CV_Marek.pdf" target="_blank">CV</a>
+          <a href="https://github.com/mareksigmund/Projekty" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/marek-sigmund-235164357"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:marek@email.com">E-mail</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <script>
-    function setMainImage(img) {
-      const main = document.getElementById('main-image');
-      main.src = img.src;
-      main.alt = img.alt;
-    }
-  </script>
-</body>
+    <script>
+      function setMainImage(img) {
+        const main = document.getElementById("main-image");
+        const caption = document.getElementById("image-caption");
+        main.src = img.src;
+        main.alt = img.alt;
+        caption.textContent = img.alt;
+      }
+    </script>
+  </body>
 </html>

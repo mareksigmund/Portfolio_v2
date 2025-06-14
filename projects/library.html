@@ -1,70 +1,130 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>LibraryApp – Projekt</title>
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraryApp – Projekt</title>
+    <link rel="stylesheet" href="../assets/css/style_app.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="project-page">
+      <div class="container">
+        <a href="../index.html" class="back">← Powrót do strony głównej</a>
 
-  <section class="project-page">
-    <div class="container">
-      <a href="../index.html" class="back">← Powrót do strony głównej</a>
+        <h1>LibraryApp</h1>
+        <p class="intro">
+          Aplikacja webowa do zarządzania biblioteką – umożliwia rezerwacje,
+          wypożyczenia i zarządzanie zasobami z poziomu różnych ról.
+        </p>
 
-      <h1>LibraryApp</h1>
-      <p class="intro">
-        Aplikacja do obsługi systemu bibliotecznego online – rezerwacje, wypożyczenia, zarządzanie użytkownikami i książkami z poziomu różnych ról.
-      </p>
+        <ul class="tech-list">
+          <li>Angular</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>MongoDB</li>
+        </ul>
 
-      <h2>Technologie</h2>
-      <ul class="tech-list">
-        <li>Angular</li>
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>MongoDB</li>
-      </ul>
-
-      <h2>O projekcie</h2>
-      <p>
-        System obsługuje użytkowników, bibliotekarzy i administratorów. Pozwala przeglądać katalog, dokonywać rezerwacji, wypożyczać i zwracać książki.
-        Administrator może zarządzać kontami oraz zawartością bazy. Wszystko działa w czasie rzeczywistym dzięki połączeniu frontend Angular z backendem Node/Express i bazą MongoDB.
-      </p>
-
-      <h2>Screeny aplikacji</h2>
-      <div class="gallery-wrapper">
-        <div class="gallery-main">
-          <img id="main-image" src="../assets/img/libapp/bibl_panel_glowny.png" alt="Panel główny" />
+        <div class="o-projekcie">
+          <p>
+            <strong>LibraryApp</strong> to system biblioteczny dostępny przez
+            przeglądarkę. Aplikacja oferuje funkcjonalności zarówno dla zwykłych
+            użytkowników, jak i bibliotekarzy oraz administratorów. Pozwala
+            przeglądać katalog książek, rezerwować pozycje, wypożyczać je oraz
+            zarządzać danymi użytkowników i zasobami biblioteki.
+          </p>
+          <p>
+            Projekt został stworzony w architekturze klient–serwer. Backend w
+            Node.js + Express odpowiada za logikę aplikacji i komunikację z bazą
+            danych MongoDB. Frontend wykonany w Angularze zapewnia responsywny,
+            dynamiczny interfejs. Każda z ról ma dedykowany panel – użytkownik
+            widzi swoje rezerwacje i wypożyczenia, a administrator zarządza
+            zasobami i kontami.
+          </p>
         </div>
-        <div class="gallery-thumbnails">
-          <img src="../assets/img/libapp/bibl_panel_glowny.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/libapp/user_moje_rezerwacje.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/libapp/user_moje_wypozyczenia.png" onclick="setMainImage(this)" />
-          <img src="../assets/img/libapp/admin_dodanie_bibliotekarza.png" onclick="setMainImage(this)" />
+
+        <h2>Galeria widoków</h2>
+        <div class="gallery-wrapper">
+          <div class="gallery-main">
+            <p id="image-caption" class="image-caption">Panel główny</p>
+            <img
+              id="main-image"
+              src="../assets/img/libapp/bibl_panel_glowny.png"
+              alt="Panel główny"
+            />
+          </div>
+          <div class="gallery-thumbnails">
+            <img
+              src="../assets/img/libapp/bibl_panel_glowny.png"
+              alt="Panel główny"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/libapp/user_moje_rezerwacje.png"
+              alt="Moje rezerwacje"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/libapp/user_moje_wypozyczenia.png"
+              alt="Moje wypożyczenia"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/libapp/admin_dodanie_bibliotekarza.png"
+              alt="Dodawanie bibliotekarza"
+              onclick="setMainImage(this)"
+            />
+          </div>
+        </div>
+
+        <h2>Plany rozwoju</h2>
+        <ul class="feature-list">
+          <li>Powiadomienia e-mail o zbliżającym się terminie zwrotu</li>
+          <li>Możliwość oceny i komentowania książek</li>
+          <li>Eksport historii użytkownika do PDF</li>
+          <li>Rozszerzony system ról (moderatorzy, redaktorzy)</li>
+        </ul>
+
+        <div class="project-links">
+          <a
+            href="https://github.com/mareksigmund/Projekty"
+            target="_blank"
+            class="btn"
+            >Zobacz kod na GitHub</a
+          >
         </div>
       </div>
+    </section>
 
-      <h2>Plany rozwoju</h2>
-      <ul class="feature-list">
-        <li>Powiadomienia mailowe o zbliżającym się terminie zwrotu</li>
-        <li>Funkcja oceny i opiniowania książek</li>
-        <li>Eksport historii użytkownika do PDF</li>
-        <li>Rozbudowany system uprawnień (moderatorzy, redaktorzy)</li>
-      </ul>
-
-      <div class="buttons">
-        <a href="https://github.com/mareksigmund/Projekty" target="_blank" class="btn">Zobacz kod na GitHub</a>
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="../assets/cv/CV_Marek.pdf" target="_blank">CV</a>
+          <a href="https://github.com/mareksigmund/Projekty" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/marek-sigmund-235164357"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:marek@email.com">E-mail</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <script>
-    function setMainImage(img) {
-      const main = document.getElementById('main-image');
-      main.src = img.src;
-      main.alt = img.alt;
-    }
-  </script>
-</body>
+    <script>
+      function setMainImage(img) {
+        const main = document.getElementById("main-image");
+        const caption = document.getElementById("image-caption");
+        main.src = img.src;
+        main.alt = img.alt;
+        caption.textContent = img.alt;
+      }
+    </script>
+  </body>
 </html>

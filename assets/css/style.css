@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   background: #fdfdfd;
   color: #111;
@@ -90,7 +90,7 @@ body {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   width: 280px;
   text-align: left;
   transition: 0.3s ease;
@@ -98,7 +98,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card h3 {
@@ -144,9 +144,8 @@ body {
   font-size: 0.95rem;
   font-weight: 500;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
-
 
 /* Footer */
 footer {
@@ -174,3 +173,57 @@ footer {
   color: #aaa;
 }
 
+/* Zainteresowania */
+
+.interests {
+  background: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.interests h2 {
+  margin-bottom: 2rem;
+}
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.interest {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.interest i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.interest h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.interest p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Wyśrodkowanie ostatniego kafelka gdy jest nieparzyście */
+.interest-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.interest {
+  flex: 0 1 260px;
+}

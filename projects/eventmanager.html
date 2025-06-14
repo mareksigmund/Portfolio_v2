@@ -1,104 +1,152 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EventManager – Projekt</title>
-  <link rel="stylesheet" href="../assets/css/style_eventapp.css" />
-  <link rel="stylesheet" href="../assets/css/style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EventManager – Projekt</title>
+    <link rel="stylesheet" href="../assets/css/style_app.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="project-page">
+      <div class="container">
+        <a href="../index.html" class="back">← Powrót do strony głównej</a>
 
-  <section class="project-page">
-    <div class="container">
-      <a href="../index.html" class="back">← Powrót do strony głównej</a>
+        <h1>EventManager</h1>
+        <p class="intro">
+          EventManager to aplikacja webowa do zarządzania wydarzeniami,
+          użytkownikami i zapisami. Obsługuje różne poziomy dostępu i oferuje
+          panel administracyjny oraz statystyki.
+        </p>
 
-      <h1>EventManager</h1>
-      <p class="intro">
-        EventManager to aplikacja webowa do zarządzania wydarzeniami, użytkownikami i zapisami. Obsługuje różne poziomy dostępu i oferuje panel administracyjny oraz statystyki.
-      </p>
+        <ul class="tech-list">
+          <li>ASP.NET Core</li>
+          <li>Entity Framework Core</li>
+          <li>Microsoft Identity</li>
+          <li>SQL Server</li>
+          <li>MVC (.NET)</li>
+        </ul>
 
-          
-      <ul class="tech-list">
-        <li>ASP.NET Core</li>
-        <li>Entity Framework Core</li>
-        <li>Microsoft Identity</li>
-        <li>SQL Server</li>
-        <li>MVC (.NET)</li>
-      </ul>
+        <div class="o-projekcie">
+          <p>
+            EventManager to autorska aplikacja webowa zaprojektowana z myślą o
+            kompleksowym zarządzaniu wydarzeniami — od tworzenia i edycji
+            eventów, przez zapisy użytkowników, po analizę statystyk i obsługę
+            ról. System powstał z potrzeby stworzenia narzędzia, które będzie
+            bardziej elastyczne niż standardowe formularze wydarzeń.
+          </p>
 
-    <div class="o-projekcie">
-      <p>
-        EventManager to autorska aplikacja webowa zaprojektowana z myślą o kompleksowym zarządzaniu wydarzeniami — od tworzenia i edycji eventów, przez zapisy użytkowników, po analizę statystyk i obsługę ról. System powstał z potrzeby stworzenia narzędzia, które będzie bardziej elastyczne niż standardowe formularze wydarzeń.
-      </p>
+          <p>
+            Aplikacja obsługuje cztery poziomy dostępu:
+            <strong>Administratora</strong>, <strong>Organizatora</strong>,
+            <strong>Moderatora</strong> oraz <strong>Użytkownika</strong>. Każda
+            z ról ma przypisane odpowiednie uprawnienia, co pozwala lepiej
+            zarządzać procesem organizacji i udziału w wydarzeniach. Od
+            założenia konta, przez tworzenie eventów, aż po zarządzanie
+            uczestnikami – wszystko działa w jednym spójnym systemie.
+          </p>
 
-      <p>
-        Aplikacja obsługuje cztery poziomy dostępu: <strong>Administratora</strong>, <strong>Organizatora</strong>, <strong>Moderatora</strong> oraz <strong>Użytkownika</strong>. Każda z ról ma przypisane odpowiednie uprawnienia, co pozwala lepiej zarządzać procesem organizacji i udziału w wydarzeniach. Od założenia konta, przez tworzenie eventów, aż po zarządzanie uczestnikami – wszystko działa w jednym spójnym systemie.
-      </p>
+          <p>
+            Backend systemu został zbudowany w technologii
+            <strong>ASP.NET Core</strong> z wykorzystaniem wzorca MVC oraz
+            <strong>Entity Framework Core</strong>. Uwierzytelnianie oparte jest
+            o <strong>Microsoft Identity</strong>, a dane przechowywane są w
+            <strong>SQL Serverze</strong>. Frontend przygotowany został w
+            klasycznym stylu Razor/MVC z zachowaniem czytelności i skalowalności
+            kodu.
+          </p>
 
-      <p>
-        Backend systemu został zbudowany w technologii <strong>ASP.NET Core</strong> z wykorzystaniem wzorca MVC oraz <strong>Entity Framework Core</strong>. Uwierzytelnianie oparte jest o <strong>Microsoft Identity</strong>, a dane przechowywane są w <strong>SQL Serverze</strong>. Frontend przygotowany został w klasycznym stylu Razor/MVC z zachowaniem czytelności i skalowalności kodu.
-      </p>
+          <p>
+            Projekt ten traktuję jako solidną bazę do dalszego rozwoju – możliwą
+            do wykorzystania w realnych scenariuszach, takich jak organizacja
+            szkoleń, konferencji czy eventów firmowych. Najważniejsza dla mnie
+            była logika ról oraz poprawna struktura danych – bo od tego zaczyna
+            się każdy porządny system.
+          </p>
+        </div>
 
-      <p>
-        Projekt ten traktuję jako solidną bazę do dalszego rozwoju – możliwą do wykorzystania w realnych scenariuszach, takich jak organizacja szkoleń, konferencji czy eventów firmowych. Najważniejsza dla mnie była logika ról oraz poprawna struktura danych – bo od tego zaczyna się każdy porządny system.
-      </p>
-    </div>
+        <h2>Galeria widoków</h2>
+        <div class="gallery-wrapper">
+          <div class="gallery-main">
+            <p id="image-caption" class="image-caption">Główne okno</p>
+            <img
+              id="main-image"
+              src="../assets/img/eventmanager/main_widok.png"
+              alt="Główne okno"
+            />
+          </div>
 
+          <div class="gallery-thumbnails">
+            <img
+              src="../assets/img/eventmanager/main_widok.png"
+              alt="Główne okno"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/eventmanager/panel_admina.png"
+              alt="Panel administratora"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/eventmanager/rejestracja.png"
+              alt="Formularz rejestracji użytkownika"
+              onclick="setMainImage(this)"
+            />
+            <img
+              src="../assets/img/eventmanager/szczegoly.png"
+              alt="Szczegóły wydarzenia"
+              onclick="setMainImage(this)"
+            />
+          </div>
+        </div>
 
+        <h2>Planowane rozszerzenia</h2>
+        <ul class="feature-list">
+          <li>Integracja z kalendarzem Google</li>
+          <li>Powiadomienia e-mail i push</li>
+          <li>Eksport statystyk i danych do PDF</li>
+          <li>Rozbudowany panel Moderatora</li>
+          <li>Ulepszony interfejs i lepsza responsywność</li>
+        </ul>
 
-<h2>Galeria widoków</h2>
-<div class="gallery-wrapper">
-  <div class="gallery-main">
-    <p id="image-caption" class="image-caption">Główne okno</p>
-    <img id="main-image" src="../assets/img/eventmanager/main_widok.png" alt="Główne okno" />
-  </div>
-
-  <div class="gallery-thumbnails">
-    <img src="../assets/img/eventmanager/main_widok.png" alt="Główne okno" onclick="setMainImage(this)" />
-    <img src="../assets/img/eventmanager/panel_admina.png" alt="Panel administratora" onclick="setMainImage(this)" />
-    <img src="../assets/img/eventmanager/rejestracja.png" alt="Formularz rejestracji użytkownika" onclick="setMainImage(this)" />
-    <img src="../assets/img/eventmanager/szczegoly.png" alt="Szczegóły wydarzenia" onclick="setMainImage(this)" />
-  </div>
-</div>
-
-
-      <h2>Planowane rozszerzenia</h2>
-      <ul class="feature-list">
-        <li>Integracja z kalendarzem Google</li>
-        <li>Powiadomienia e-mail i push</li>
-        <li>Eksport statystyk i danych do PDF</li>
-        <li>Rozbudowany panel Moderatora</li>
-        <li>Ulepszony interfejs i lepsza responsywność</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mareksigmund/Projekty/tree/main/EventAPP" target="_blank" class="btn">Zobacz kod na GitHub</a>
+        <div class="project-links">
+          <a
+            href="https://github.com/mareksigmund/Projekty/tree/main/EventAPP"
+            target="_blank"
+            class="btn"
+            >Zobacz kod na GitHub</a
+          >
+        </div>
       </div>
-    </div>
-    
-  </section>
-      <footer>
-  <div class="container">
-    <div class="footer-links">
-      <a href="../assets/cv/CV_Marek.pdf" target="_blank">CV</a>
-      <a href="https://github.com/mareksigmund/Projekty" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/marek-sigmund-235164357" target="_blank">LinkedIn</a>
-      <a href="mailto:marek@email.com">E-mail</a>
-    </div>
-  </div>
-</footer>
- <script>
-  function setMainImage(img) {
-    const main = document.getElementById('main-image');
-    const caption = document.getElementById('image-caption');
-    main.src = img.src;
-    main.alt = img.alt;
-    caption.textContent = img.alt || "Podgląd widoku";
-  }
-</script>
-
-
-</body>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="../assets/cv/CV_Marek.pdf" target="_blank">CV</a>
+          <a href="https://github.com/mareksigmund/Projekty" target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.linkedin.com/in/marek-sigmund-235164357"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a href="mailto:marek@email.com">E-mail</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function setMainImage(img) {
+        const main = document.getElementById("main-image");
+        const caption = document.getElementById("image-caption");
+        main.src = img.src;
+        main.alt = img.alt;
+        caption.textContent = img.alt || "Podgląd widoku";
+      }
+    </script>
+  </body>
 </html>

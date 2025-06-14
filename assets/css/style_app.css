@@ -68,7 +68,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   color: #333;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
 /* Galeria */
@@ -85,10 +85,9 @@
   max-width: 800px;
   border-radius: 12px;
   background-color: transparent;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   object-fit: contain;
 }
-
 
 .gallery-thumbnails {
   display: grid;
@@ -127,14 +126,13 @@
   border-radius: 6px;
   text-decoration: none;
   font-weight: 500;
-  box-shadow: 0 4px 8px rgba(0,123,255,0.2);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
   transition: background 0.3s ease;
 }
 
 .project-links .btn:hover {
   background-color: #0056b3;
 }
-
 
 .image-caption {
   font-weight: 500;
